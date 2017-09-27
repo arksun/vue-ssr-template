@@ -1,0 +1,27 @@
+
+mxBorder(p='', v=1, c=rgba(black,.2), s=solid)
+  pos = ''
+  pos = '-bottom' if p=='b' 
+  pos = '-top' if p=='t' 
+  pos = '-right' if p=='r' 
+  pos = '-left' if p=='l'
+  border{pos} unit(v, px) s c 
+
+// use fa
+mxCenterIco(w=35, h='')
+  w = unit(w, px)
+  if h==''
+    h = w
+  width w
+  height h
+  line-height h
+  margin-top (h/-2)
+  margin-left (w/-2)
+  font-size (w/2)
+
+// s: font size = 1em, l: number of line
+mxEllipsis(s=1, l=2, lh=1)
+  overflow hidden
+  font-size unit(s, em)
+  line-height s * lh * 1.32em 
+  height s * l * lh * 1.4em

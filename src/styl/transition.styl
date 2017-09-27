@@ -1,0 +1,41 @@
+// add this to the classList of target dom
+for ts in (3..12)
+  .trans-{ts}
+    transition-property all 
+    transition-duration (ts / 10)s
+    transition-timing-function ease
+
+// types = fade, slideRight, slideLeft, slideDown, slideUp, zoomIn
+// typesInOnly = slideRight
+// for t in types
+//   .{t}-enter, .{t}-leave-active
+//     opacity 0
+.fade-enter, .fade-leave-active
+  opacity: 0
+.slideRight-enter, .slideRight-leave
+  opacity 0
+  transform translateX(5%)
+.slideRight-in-enter
+  opacity 0
+  transform translateX(25%)
+.slideLeft-enter, .slideLeft-leave
+  opacity 0
+  transform translateX(-5%)
+.slideDown-enter, .slideDown-leave
+  opacity 0
+  transform translateY(100%)
+.slideUp-enter, .slideUp-leave
+  opacity 0
+  transform translateY(-100%)
+
+.zoomInSmall-enter, .zoomInSmall-leave
+  transform scale(.8)
+.zoomInBig-enter, .zoomInBig-leave
+  transform scale(1.2)
+
+
+.modal-enter, .modal-leave-active
+  opacity 0
+.modal-enter .modal, .modal-leave-active .modal,
+.modal-enter .dialog, .modal-leave-active .dialog
+  transform scale(1.1)

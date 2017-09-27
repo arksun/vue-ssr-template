@@ -1,0 +1,5 @@
+{
+  "name": "dev",
+  "script": "npm",
+  "args": "run start:dev"
+}

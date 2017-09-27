@@ -1,0 +1,52 @@
+.btn
+  box-sizing border-box
+  display inline-block
+  font-family futuraMed
+  text-align center
+  cursor pointer
+  padding 6px 15px
+  border 1px solid transparent
+  &:hover
+    opacity .9
+  &:active
+    opacity .7
+    box-shadow inset 0 3px 5px rgba(0,0,0,0.125)
+
+.btn-default
+  background-color white
+  color black
+  border 1px solid c-1
+  &:hover
+    background-color: c-1
+    color white
+  &:active, &:link
+    background #e2e2e2
+
+.btn-primary
+  background-color c-1
+  color white
+  border 1px solid c-1
+  &:hover
+    opacity .8
+  &:active, &:link
+    opacity .9
+
+.btn-white
+  color black
+  border 1px solid black
+  &:hover
+    color white
+    border-color white
+    background-color black
+
+.btn-default-b
+  color white
+  border 1px solid c-1
+  &:hover
+    background-color: c-1
+  &:active, &:link
+    border-color c-1
+.btn-small
+  width 100px
+.btn-medium
+  width 200px

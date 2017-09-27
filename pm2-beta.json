@@ -1,0 +1,5 @@
+{
+  "name": "beta",
+  "script": "npm",
+  "args": "run start:beta"
+}
